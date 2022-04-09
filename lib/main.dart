@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'pages/geochart.dart';
 import 'pages/home.dart';
 
 void main() => runApp(const MainScreen());
@@ -17,11 +18,7 @@ class _MainScreenState extends State<MainScreen> {
   final _pages = <Widget>[
     //index0でホームを呼び出し
     const Home(),
-    Container(
-      child: const Text('Favorite'),
-      alignment: Alignment.center,
-      color: Colors.pink.withOpacity(0.5),
-    ),
+    const Geochart(),
     Container(
       child: const Text('Settings'),
       alignment: Alignment.center,
